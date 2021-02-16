@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Practica3</string>
+    <string name="listaContactos" />
+    <string name="nuebo">NUEVO</string>
+    <string name="cancel">CANCEL</string>
+    <string name="nuevoC">Nuevo Contacto</string>
+    <string name="empresa">Empresa</string>
+    <string name="particular">Particular</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="inValor">Introduce un valor</string>
+    <string name="vacia" />
+    <string name="ok">OK</string>
+    <string name="fav">Favoritos</string>
+    <string name="edad">Edad:</string>
+    <string name="edadnum">1</string>
+    <string name="telefono">Telefono</string>
+    <string name="salir">SALIR</string>
+    <string name="llamar">Recodar llamar</string>
+</resources>
