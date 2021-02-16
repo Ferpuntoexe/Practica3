@@ -83,8 +83,7 @@ public class NuevoContacto extends AppCompatActivity {
                     }
                 }
         );
-        ImageView ivEmpresa = (ImageView) findViewById(R.id.ivEmpresa);
-        ImageView ivParticular = (ImageView) findViewById(R.id.ivParticular);
+        ImageView ivParticularEmpresa = (ImageView) findViewById(R.id.ivParticularEmpresa);
 
         RadioGroup rgEmpresa = (RadioGroup) findViewById(R.id.rgEmpresa);
         rgEmpresa.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -92,15 +91,32 @@ public class NuevoContacto extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
                     case R.id.rbtEmpresa:
-                        ivEmpresa.setVisibility(View.VISIBLE);
-                        ivParticular.setVisibility(View.INVISIBLE);
+                        ivParticularEmpresa.setVisibility(View.VISIBLE);
+                        ivParticularEmpresa.setImageResource(R.mipmap.ic_empresa);
                         break;
                     case R.id.rbtParticular:
-                        ivParticular.setVisibility(View.VISIBLE);
-                        ivEmpresa.setVisibility(View.INVISIBLE);
+                        ivParticularEmpresa.setVisibility(View.VISIBLE);
+                        ivParticularEmpresa.setImageResource(R.mipmap.ic_particular);
                 }
             }
         });
+        ImageView ivGenero = (ImageView) findViewById(R.id.ivGenero);
+        RadioGroup rgGenero = (RadioGroup) findViewById(R.id.rgGenero);
+        rgGenero.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId) {
+                    case R.id.rbtMujer:
+                        ivGenero.setVisibility(View.VISIBLE);
+                        ivGenero.setImageResource(R.mipmap.ic_mujer);
+                        break;
+                    case R.id.rbtHombre:
+                        ivGenero.setVisibility(View.VISIBLE);
+                        ivGenero.setImageResource(R.mipmap.ic_hombre);
+                }
+            }
+        });
+
         ImageView ivFavorito = (ImageView) findViewById(R.id.ivFavorito);
         Switch swfavorito = (Switch) findViewById(R.id.swFavoritos);
         swfavorito.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

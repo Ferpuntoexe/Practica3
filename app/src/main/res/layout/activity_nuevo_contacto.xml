@@ -66,14 +66,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="205dp" />
+        app:layout_constraintGuide_percent="0.5" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="98dp" />
+        app:layout_constraintGuide_percent="0.23844282" />
 
     <RadioGroup
         android:id="@+id/rgEmpresa"
@@ -98,6 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/particular" />
+
     </RadioGroup>
 
     <RadioGroup
@@ -224,7 +225,7 @@
         app:srcCompat="@android:drawable/stat_sys_phone_call_forward" />
 
     <ImageView
-        android:id="@+id/ivParticular"
+        android:id="@+id/ivParticularEmpresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -234,13 +235,15 @@
         app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
     <ImageView
-        android:id="@+id/ivEmpresa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/ivGenero"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
         android:layout_marginTop="4dp"
         android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/ivLlamar"
+        app:layout_constraintEnd_toStartOf="@+id/ivFavorito"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/tvNuevoContacto"
-        app:srcCompat="@android:drawable/ic_menu_preferences" />
+        app:srcCompat="@mipmap/ic_mujer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
